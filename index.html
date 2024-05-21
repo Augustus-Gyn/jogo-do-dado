@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dado de 100 Lados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jogo de Dado de 100 Lados</h1>
+
+        <!-- Seletor para escolher a arma -->
+        <div class="selector-container">
+            <label for="armas">Escolha sua arma:</label>
+            <select id="armas">
+                <option value="espada">Espada</option>
+                <option value="arco">Arco</option>
+                <option value="machado">Machado</option>
+            </select>
+        </div>
+
+        <!-- Carta da arma escolhida -->
+        <div id="cartaArma" class="weapon-card">
+            <img id="imagemArma" src="" alt="">
+            <p id="nomeArma"></p>
+        </div>
+
+        <h2>Imagens do Monstro</h2>
+
+        <!-- Seletor para escolher o monstro -->
+        <div class="selector-container">
+            <label for="monstro">Escolha seu monstro:</label>
+            <select id="monstro">
+                <option value="Leptospirose">Leptospirose</option>
+                <option value="Petista">Petista</option>
+                <option value="Sogrinha">Sogrinha</option>
+            </select>
+        </div>
+
+        <!-- Carta do monstro escolhido -->
+        <div id="cartamonstro" class="monster-card">
+            <img id="imagemmonstro" src="" alt="">
+            <p id="nomemonstro"></p>
+            <p id="hpMonstro"></p> <!-- Novo elemento para exibir o HP do monstro -->
+        </div>
+
+        <!-- Container para os botões -->
+        <div class="button-container">
+
+            <button class="button hidden" id="PartedocorpoBtnD8">D8 Parte do corpo</button>
+            <button class="button" id="atacarBtnD12">Atacar</button> <!-- Alterado o botão para Atacar -->
+            <button class="button hidden" id="reiniciarJogoBtn">Reiniciar Jogo</button>
+        </div>
+        
+         <!-- gif do dado girando -->
+         <div id="gifCriticoContainer" class="hidden">
+            <img id="gifCritico" src="" alt="Ataque Crítico">
+        </div>
+        
+
+        <!-- Resultados -->
+        <div id="resultados">
+            <p id="resultadoMovimento"></p>
+            <p id="resultadoEsquiva"></p>
+            <p id="resultadoDefesa"></p>
+            <p id="resultadoAtaque"></p> <!-- Novo elemento para exibir o resultado do ataque -->
+            <div id="imagemParteCorpo"></div> <!-- Novo elemento para exibir a imagem da parte do corpo -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

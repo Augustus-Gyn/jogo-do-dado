@@ -1,0 +1,138 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.weapon-card,
+.monster-card {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.weapon-card img,
+.monster-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.monster-card p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.selector-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.mostrarGifAtaque {
+    padding: 50px 25px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .weapon-card,
+    .monster-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .mostrarGifAtaque {
+        padding: 30px 15px;
+    }
+}
