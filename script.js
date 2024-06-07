@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const resultadoAtaqueElemento = document.getElementById('resultadoAtaque');
                 const novoHP = atualizarHpMonstro(danoFinal);
 
-                resultadoAtaqueElemento.innerText = `Dano causado: ${danoFinal}` + (isCritico ? ` (Crítico: +${resultado})` : '');
+                resultadoAtaqueElemento.innerText = `Resultado do D: ${danoFinal}` + (isCritico ? ` (Crítico: +${resultado})` : '');
 
                 if (novoHP <= 0) {
                     alert('Você derrotou o monstro! Parabéns!');
