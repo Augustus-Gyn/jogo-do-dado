@@ -49,25 +49,31 @@
 
         <!-- Container para os botões -->
         <div class="button-container">
-
             <button class="button hidden" id="PartedocorpoBtnD8">D8 Parte do corpo</button>
-            <button class="button" id="atacarBtnD12">Atacar</button> <!-- Alterado o botão para Atacar -->
             <button class="button hidden" id="reiniciarJogoBtn">Reiniciar Jogo</button>
+            <button class="button" id="atacarBtnD2">Rolar D2</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD4">Rolar D4</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD6">Rolar D6</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD8">Rolar D8</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD10">Rolar D10</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD12">Rolar D12</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD20">Rolar D20</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD30">Rolar D30</button> <!-- Alterado o botão para Atacar -->
+            <button class="button" id="atacarBtnD100">Rolar D100</button> <!-- Alterado o botão para Atacar -->
         </div>
-        
-         <!-- gif do dado girando -->
-         <div id="gifCriticoContainer" class="hidden">
-            <img id="gifCritico" src="" alt="Ataque Crítico">
-        </div>
-        
 
-        <!-- Resultados -->
-        <div id="resultados">
-            <p id="resultadoMovimento"></p>
-            <p id="resultadoEsquiva"></p>
-            <p id="resultadoDefesa"></p>
-            <p id="resultadoAtaque"></p> <!-- Novo elemento para exibir o resultado do ataque -->
-            <div id="imagemParteCorpo"></div> <!-- Novo elemento para exibir a imagem da parte do corpo -->
+        <!-- Novo container para gif e resultados -->
+        <div id="resultContainer" class="result-container">
+            <div id="gifAtaqueContainer" class="hidden">
+                <img id="gifAtaque" src="" alt="Ataque Crítico">
+            </div>
+            <div id="resultados">
+                <p id="resultadoMovimento"></p>
+                <p id="resultadoEsquiva"></p>
+                <p id="resultadoDefesa"></p>
+                <p id="resultadoAtaque"></p> <!-- Novo elemento para exibir o resultado do ataque -->
+                <div id="imagemParteCorpo"></div> <!-- Novo elemento para exibir a imagem da parte do corpo -->
+            </div>
         </div>
     </div>
 
