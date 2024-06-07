@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const monstros = {
-        'Leptospirose': { src: 'imagens/monstros/Leptospirose.jpg', hp: 1000 },
-        'Petista': { src: 'imagens/monstros/petista.png', hp: 1200 },
-        'Sogrinha': { src: 'imagens/monstros/sogrinha.png', hp: 1500 }
+        'Leptospirose': { src: 'imagens/monstros/Leptospirose.jpg', hp: 350 },
+        'Petista': { src: 'imagens/monstros/petista.png', hp: 1000 },
+        'Sogrinha': { src: 'imagens/monstros/sogrinha.png', hp: 550 }
     };
 
     const armas = {
